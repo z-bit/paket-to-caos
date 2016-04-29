@@ -1,0 +1,24 @@
+{
+  "name": "paket-caos",
+  "version": "1.0.0",
+  "description": "Watches P:\\_SPPS_PDF and uploads a newly created *.pdf to CAOS",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [
+    "Care",
+    "CAOS",
+    "Schnittstelle",
+    "PDF",
+    "Paket",
+    "SPPS"
+  ],
+  "author": "Guenther",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "chokidar": "^1.4.3",
+    "pdf-to-text": "0.0.6"
+  }
+}
