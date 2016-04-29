@@ -12,17 +12,23 @@ function getPdf(listOfFiles) {
 //var doc = process.argv[2];
 //var doc = 'no doc';
 var fs = require('fs');
-fs.readdir(process.cwd(), function(err, files) {
+var pdf_dir = 'P:/_SPPS_PDF/';
+fs.readdir(pdf_dir, function(err, files) {
 	if (err) throw(err);
-	var doc = getPdf(files);
+	console.log(files);
+	var doc = pdf_dir + getPdf(files);
+	console.log(doc);
 	
 	var ptt = require('pdf-to-text');
 	var option = {from: 0, to: 10}; // from page 0 to 10
 	
 	ptt.pdfToText(doc, option, function(err, pdf) {
 		if (err) throw(err);
-	  var base = pdf.indexOf('\n');
+		console.log(pdf);
+		var base = pdf.indexOf('\n');
 		var fin = pdf.substr(base+64, 17);
+		
+		
 		
 		base = pdf.indexOf('\n1');
 		nr = pdf.substr(base+3, 10);
