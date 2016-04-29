@@ -1,12 +1,12 @@
-# paket-caos
-Ueberwacht das Verzeichnis P:\_SPPS_PDF
+# paket-to-caos
+Ueberwacht das Verzeichnis P:\\_SPPS_PDF
 
 
 ## Idee
 
-* SPPS -> Warenkorb -> Drucken -> oeffent eine PDF im Standard-PDF-Viewer (vorzugsweise Foxit)
-* PDF Viewer -> Speichern unter -> P:\_SPPS_PDF
-* ***paket-laden*** -> ueberwacht P:\_SPPS_PDF -> erkennt gespeicherte PDF -> started Verarbeitung
+* SPPS => Warenkorb => Drucken => oeffent eine PDF im Standard-PDF-Viewer (vorzugsweise Foxit)
+* PDF Viewer => Speichern unter => P:\\_SPPS_PDF
+* ***paket-to-caos*** -> ueberwacht P:\\_SPPS_PDF -> erkennt gespeicherte PDF -> started Verarbeitung
 	* einlesen 
 	* in Text umwandeln
 	* PDF loeschen
