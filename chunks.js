@@ -1,13 +1,4 @@
-var pt = require('pdf-text');
-var pdf = 'P:/_SPPS_PDF/Pakete_komplett.pdf';
-
-pt(pdf, function(err, chunks) {
-	console.log(chunks);				// sehr gut !!
-})
-
-var chunks =							// ohne Positionspreise
-
-[ 
+var chunks = [	// ohne Positionspreise
   'Kundendaten',
   'Fahrzeugdaten',
   'Titel',
